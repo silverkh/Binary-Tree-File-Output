@@ -5,7 +5,6 @@
 
 #define MAX_WORD_SIZE	 100
 #define MAX_MEANING_SIZE 200
-#define max(a,b) (((a)>(b))?(a):(b))
 FILE* fp;
 
 typedef struct
@@ -42,7 +41,7 @@ TreeNode * insert_node(TreeNode * node, element key)
 
 void help()
 {
-	printf("i: ÀÔ·Â\nq: Á¾·á\nr: ÀúÀå\n");
+	printf("i: Ã€Ã”Â·Ã‚\nq: ÃÂ¾Â·Ã¡\nr: Ã€ÃºÃ€Ã¥\n");
 }
 
 void savefile(TreeNode* root)
@@ -74,9 +73,9 @@ int main(void)
 		getchar();
 		switch (command) {
 		case 'i':
-			printf("´Ü¾î:");
+			printf("Â´ÃœÂ¾Ã®:");
 			gets(e.word);
-			printf("ÀÇ¹Ì:");
+			printf("Ã€Ã‡Â¹ÃŒ:");
 			gets(e.meaning);
 			root = insert_node(root, e);
 			break;
