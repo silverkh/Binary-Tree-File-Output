@@ -41,7 +41,7 @@ TreeNode * insert_node(TreeNode * node, element key)
 
 void help()
 {
-	printf("i: ÀÔ·Â\nq: Á¾·á\nr: ÀúÀå\n");
+	printf("i: 입력\nq: 종료\nr: 저장\n");
 }
 
 void savefile(TreeNode* root)
@@ -73,9 +73,9 @@ int main(void)
 		getchar();
 		switch (command) {
 		case 'i':
-			printf("´Ü¾î:");
+			printf("단어:");
 			gets(e.word);
-			printf("ÀÇ¹Ì:");
+			printf("의미:");
 			gets(e.meaning);
 			root = insert_node(root, e);
 			break;
